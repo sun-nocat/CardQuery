@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        body{
+            background-color: gainsboro;
+        }
+
+        #h1{
+            text-align: center;
+            font-size: 250%  ;
+            font-weight: 500;
+            margin-bottom: 200px;
+        }
+
+        input{
+            height: 55px;
+            width: 200px;
+            margin-top: 30px;
+            font-size: 40px;
+            line-height: 50px;
+        }
+        #main{
+            position: absolute;
+            left: 51%;
+
+        }
+        #mainleft{
+            position: absolute;
+            left:25%;
+
+        }
+        li{
+            list-style:none;
+            height: 90px;
+            font-size:350%;
+
+
+        }
+        #img1{
+            background: url(/static/img/back.jpg) no-repeat ;
+            background-size:cover;
+            height: 280px;
+        }
+        #img2{
+            position: absolute;
+            top: 60%;
+            left: 30%;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="img1"></div>
+<div id="h1"><h1>一卡通余额查询</h1></div>
+<div id="mainleft">
+    <ul>
+        <li>一卡通</li>
+        <li>密码</li>
+        <li>验证码</li>
+    </ul>
+</div>
+<div id="main">
+    <form action="/api/login" method="post" id="form">
+    <input type="text" name="idserial" ><br>
+    <input type="password" name="cardpwd"><br>
+    <input type="text" name="checkcode"><br>
+    <input type="submit" ><br>
+
+
+</form>
+
+</div>
+ <img src="static/img/chckcode.jpg" alt="验证码" width="400px" height="180px" id="img2">
+
+
+
+</body>
+</html>

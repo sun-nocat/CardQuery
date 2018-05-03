@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from cardquery import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^login$',views.login),
+    url(r'^$',views.login),
+    # url(r'^index$',views.index),
+    url(r'^api/login$',views.api_login),
+    url(r'^api/find$',views.api_find),
+
+    # url(r'^index$',views.index),
+    # url(r'^api/createCheck$',views.api_createCheck)
 ]
