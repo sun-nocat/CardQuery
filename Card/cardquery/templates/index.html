@@ -74,35 +74,7 @@ $(document).ready(function(){
 <p style="font-size: 35px;text-align: center; font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,Arial,sans-serif;;">您当前的可用余额为</p>
 <p style="font-size: 60px;text-align: center" id="maney">...</p>
 
-{#<div id="ma">#}
-{#        <h1 style="font-size:30px">查询流水</h1>#}
-{#    <div class="iDate full">#}
-{#        <input type="text" name="begindate" id="begindate">#}
-{#         <button type="button" class="addOn"></button>#}
-{#    </div>#}
-{#    <div class="iDate date">#}
-{#        <input type="text" name="enddate" id="enddate">#}
-{#         <button type="button" class="addOn"></button>#}
-{#    </div>#}
-{##}
-{##}
-{#    <select name="page" id="page">#}
-{#        <option value="1">第1页</option>#}
-{#        <option value="2">第2页</option>#}
-{#        <option value="3">第3页</option>#}
-{#        <option value="4">第4页</option>#}
-{#        <option value="5">第5页</option>#}
-{#        <option value="6">第6页</option>#}
-{#        <option value="7">第7页</option>#}
-{#        <option value="8">第8页</option>#}
-{#        <option value="9">第9页</option>#}
-{#        <option value="10">第10页</option>#}
-{#        <option value="11">第11页</option>#}
-{#        <option value="12">第12页</option>#}
-{#    </select>#}
-{#    <input type="button" id="but" value="查询">#}
-{#    <br><br>#}
-{#</div>#}
+
 
 
 <div>
@@ -121,50 +93,7 @@ $(document).ready(function(){
 
 
 
-{#        var tijiao=document.getElementById("but");#}
-{#        tijiao.onclick=function () {#}
-{#            var begindate=document.getElementById("begindate").value;#}
-{#            var enddate=document.getElementById("enddate").value;#}
-{#            var page=document.getElementById("page").value;#}
 
-{#            $.ajax({#}
-{#                url: "/api/find",#}
-{#                type: "POST",#}
-{#                data:{#}
-{#                    "begindate":begindate,#}
-{#                    "enddate":enddate,#}
-{#                    "page":page#}
-{#                },#}
-{##}
-{#                success : function (data) {#}
-{#                            jsdata=JSON.parse(data);#}
-{#                            console.log(data);#}
-{#                            console.log(jsdata);#}
-{#                            maney=jsdata.tradelist[0].balance;#}
-{#                            console.log(maney);#}
-{#                    document.getElementById("maney").innerText=maney;#}
-{#                    console.log(data);#}
-{#                    var elem=document.getElementById("u");#}
-{#                    elem.innerHTML="";#}
-{#                    for(var i=0;i<jsdata.tradelist.length;i++)#}
-{#                    {#}
-{#                        var createli=document.createElement("li");#}
-{#                        createli.innerHTML="时间 "+jsdata.tradelist[i].txdate+"<br>"+"消费额"+jsdata.tradelist[i].txamt+"<br>"+"消费方式"+jsdata.tradelist[i].mername+"<br>"+"余额"+jsdata.tradelist[i].balance;#}
-{#                        createli.style=#}
-{#                        document.getElementById("u").appendChild(createli);#}
-{#                    }#}
-{##}
-{##}
-{##}
-{#                    },#}
-{##}
-{#                error : function(){#}
-{#                    console.log("失败")#}
-{#                }#}
-{#            });#}
-{##}
-{#            console.log(page)#}
-{#        };#}
 
                     $.ajax({
                 url: "/api/find",
