@@ -7,9 +7,7 @@ import time
 import sys
 from cardquery import models
 
-#登录成功之后，返回index.html页面
-# def index(request):
-#     return render(request,"index.html")
+
 
 #登录接口
 #返回登录页面，同时返回验证码和cookie
@@ -49,13 +47,7 @@ def api_login(request):
         idserial=request.POST.get("idserial",None)
         cardpwd=request.POST.get("cardpwd",None)
         checkcode=request.POST.get("checkcode",None)
-        # begindate=request.POST.get("begindate",None)
-        # enddate=request.POST.get("enddate",None)
-        # page=request.POST.get("page",None)
-        # 将分页信息保存在session中
-        # request.session["begindate"]=begindate
-        # request.session["enddate"]=enddate
-        # request.session["page"]=page
+
         # 获取模拟登录所需要的cookie
         cookie1=request.COOKIES.get("name",None)
         cookie="JSESSIONID="+cookie1

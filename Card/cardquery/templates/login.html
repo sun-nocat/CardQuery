@@ -2,52 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>登录</title>
     <style>
+        .footer{
+            position: absolute;
+            top: 86%;
+            left: 5%;
+        }
         body{
-            background-color: gainsboro;
+            background-color:lightgray ;
+            margin: 0;
+            padding: 0;
         }
 
         #h1{
+            width: 375px;
             text-align: center;
-            font-size: 250%  ;
+            font-size: 100%  ;
             font-weight: 500;
-            margin-bottom: 200px;
+            margin-bottom: 60px;
         }
 
         input{
-            height: 55px;
-            width: 200px;
-            margin-top: 30px;
-            font-size: 40px;
-            line-height: 50px;
+            height: 30px;
+            width: 150px;
+            margin-top: 25px;
+            font-size: 20px;
+            line-height: 30px;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            border: 1px solid #bbbbbb;
         }
         #main{
             position: absolute;
-            left: 51%;
+            left: 43%;
 
         }
         #mainleft{
             position: absolute;
-            left:25%;
+            left:1%;
 
         }
         li{
             list-style:none;
-            height: 90px;
-            font-size:350%;
+            font-family:	Microsoft YaHei;
+            height: 65px;
+            font-size:170%;
 
 
         }
         #img1{
-            background: url(/static/img/back.jpg) no-repeat ;
+            background: url(/static/img/back.jpg) ;
+            width: 375px;
             background-size:cover;
-            height: 280px;
+            height: 140px;
         }
         #img2{
             position: absolute;
-            top: 60%;
-            left: 30%;
+            top: 69%;
+            left: 11%;
         }
 
 
@@ -58,9 +72,9 @@
 <div id="h1"><h1>一卡通余额查询</h1></div>
 <div id="mainleft">
     <ul>
-        <li>一卡通</li>
-        <li>密码</li>
-        <li>验证码</li>
+        <li>一&nbsp;卡&nbsp;通</li>
+        <li>密&nbsp;码</li>
+        <li>验&nbsp;证&nbsp;码</li>
     </ul>
 </div>
 <div id="main">
@@ -74,9 +88,14 @@
 </form>
 
 </div>
- <img src="static/img/chckcode.jpg" alt="验证码" width="400px" height="180px" id="img2">
+ <img src="static/img/chckcode.jpg" alt="验证码" width="100px" height="40px" id="img2">
 
-
+	<div class="footer">
+		<div class="container">
+			<p class="copyright">&copy; 2017 西安邮电大学信息中心 <a href="https://zypc.xupt.edu.cn/">智邮普创工作室</a></p>
+			<p class="address">地址：图书馆514室 电话：88166083</p>
+		</div>
+	</div>
 
 </body>
 </html>
