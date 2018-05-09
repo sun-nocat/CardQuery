@@ -6,9 +6,9 @@
     <title>登录</title>
     <style>
         .footer{
-
-            margin-top:60px;
-            margin-left:20px;
+            position: absolute;
+            top: 86%;
+            left: 5%;
         }
         body{
             background-color:lightgray ;
@@ -46,7 +46,7 @@
         }
         li{
             list-style:none;
-            font-family: Microsoft YaHei;
+            font-family:	Microsoft YaHei;
             height: 65px;
             font-size:170%;
 
@@ -59,8 +59,7 @@
             height: 140px;
         }
         #img2{
-
-            margin-top:130px;
+            margin-top:76px;
             margin-left:45px;
         }
 
@@ -72,14 +71,11 @@
 <div id="h1"><h1>一卡通余额查询</h1></div>
 <div id="mainleft">
     <ul>
-
-        <li>密&nbsp;码</li>
         <li>验&nbsp;证&nbsp;码</li>
     </ul>
 </div>
 <div id="main">
     <form action="/api/login" method="post" id="form">
-    <input type="password" name="cardpwd"><br>
     <input type="text" name="checkcode"><br>
     <input type="submit" ><br>
 
@@ -89,12 +85,12 @@
 </div>
  <img src="static/img/chckcode.jpg" alt="验证码" width="100px" height="40px" id="img2">
 
-        <div class="footer">
-                <div class="container">
-                        <p class="copyright">&copy; 2017 西安邮电大学信息中心 <a href="https://zypc.xupt.edu.cn/">智邮普创工作室</a></p>
-                        <p class="address">地址：图书馆514室 电话：88166083</p>
-                </div>
-        </div>
+	<div class="footer">
+		<div class="container">
+			<p class="copyright">&copy; 2017 西安邮电大学信息中心 <a href="https://zypc.xupt.edu.cn/">智邮普创工作室</a></p>
+			<p class="address">地址：图书馆514室 电话：88166083</p>
+		</div>
+	</div>
 
 </body>
 </html>
