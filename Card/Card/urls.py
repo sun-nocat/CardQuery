@@ -22,8 +22,15 @@ urlpatterns = [
     url(r'^login$',views.login),
     url(r'^$',views.oauth),
     url(r'^oauth',views.oauth),
-    url(r'^api/login$',views.api_login),
-    url(r'^api/find$',views.api_find),
+    url(r'^api/index',views.api_index),
+    url(r'^api/check$',views.api_check),
+    url(r'^api/getNewData',views.api_getNewData),
+    url(r'^api/getOneWeekData',views.api_getOneWeekData),
+    url(r'^api/getOneMonthData',views.api_getOneMonthData),
+    url(r'^addList1',views.addList1),
+    url(r'^addList2',views.addList2),
+    url(r'^addList3',views.addList3),
+
 
     # url(r'^index$',views.index),
     # url(r'^api/createCheck$',views.api_createCheck)

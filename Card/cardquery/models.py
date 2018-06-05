@@ -8,3 +8,10 @@ class User(models.Model):
     cardpwd=models.CharField(max_length=25)
     def __str__(self):
         return self.idserial
+
+class List(models.Model):
+    lid = models.CharField(max_length=20,primary_key=True)
+    shop = models.CharField(max_length=20,default='无')
+    dir = models.CharField(max_length=10,default='无')
+    def __str__(self):
+        return self.lid
